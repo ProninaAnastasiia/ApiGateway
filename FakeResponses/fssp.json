@@ -1,0 +1,84 @@
+{
+  "history": {
+    "executions": [
+      {
+        "execution_id": "EP123456789",
+        "case_number": "Судебное дело 1",
+        "court_name": "Московский городской суд",
+        "judgment_date": "2022-03-15",
+        "execution_date": "2022-04-10",
+        "debt_amount": 250000,
+        "debt_description": "Неуплата по кредитному договору",
+        "debtor_type": "Физическое лицо",
+        "status": "В производстве",
+        "payment_schedule": "Ежемесячно",
+        "paid_amount": 50000,
+        "outstanding_amount": 200000,
+        "last_payment_date": "2022-09-01",
+        "enforcement_actions": [
+          {
+            "action_date": "2022-04-10",
+            "action_type": "Изъятие имущества",
+            "action_description": "Изъятие автомобиля в счёт погашения долга"
+          },
+          {
+            "action_date": "2022-05-01",
+            "action_type": "Арест денежных средств",
+            "action_description": "Арест денежных средств на банковском счёте"
+          }
+        ],
+        "payment_history": [
+          {
+            "payment_date": "2022-05-01",
+            "amount": 25000,
+            "payment_status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-06-01",
+            "amount": 25000,
+            "payment_status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-07-01",
+            "amount": 25000,
+            "payment_status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-08-01",
+            "amount": 25000,
+            "payment_status": "Оплачено"
+          }
+        ]
+      },
+      {
+        "execution_id": "EP987654321",
+        "case_number": "Судебное дело 2",
+        "court_name": "Северный районный суд города Санкт-Петербург",
+        "judgment_date": "2023-02-01",
+        "execution_date": "2023-03-15",
+        "debt_amount": 180000,
+        "debt_description": "Неуплата алиментов",
+        "debtor_type": "Физическое лицо",
+        "status": "Исполнено",
+        "payment_schedule": "Ежемесячно",
+        "paid_amount": 180000,
+        "outstanding_amount": 0,
+        "last_payment_date": "2023-01-01",
+        "enforcement_actions": [
+          {
+            "action_date": "2023-03-15",
+            "action_type": "Перечисление алиментов на счёт",
+            "action_description": "Перечисление средств на счёт бывшего супруга"
+          }
+        ],
+        "payment_history": [
+          {
+            "payment_date": "2023-01-01",
+            "amount": 180000,
+            "payment_status": "Оплачено"
+          }
+        ]
+      }
+    ]
+  }
+}

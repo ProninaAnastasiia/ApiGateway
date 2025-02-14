@@ -1,0 +1,247 @@
+{
+  "taxpayer_status": "Индивидуальный предприниматель",
+  "history": {
+    "tax_reports": [
+      {
+        "year": 2020,
+        "income_summary": {
+          "total_income": 800000,
+          "income_type": "Предпринимательская деятельность",
+          "income_sources": [
+            {
+              "source": "Продажа товаров",
+              "amount": 500000
+            },
+            {
+              "source": "Услуги",
+              "amount": 300000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 120000,
+          "paid_tax": 110000,
+          "outstanding_tax": 10000,
+          "tax_payments": [
+            {
+              "payment_date": "2020-04-15",
+              "amount": 50000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2020-06-15",
+              "amount": 50000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2020-08-15",
+              "amount": 10000,
+              "payment_status": "Не оплачено",
+              "outstanding_amount": 10000
+            }
+          ]
+        },
+        "tax_inquiries": [
+          {
+            "inquiry_date": "2020-01-10",
+            "inquiry_type": "Запрос на уточнение налоговой задолженности",
+            "status": "Завершено",
+            "result": "Долг уменьшен на 5000 рублей"
+          }
+        ]
+      },
+      {
+        "year": 2021,
+        "income_summary": {
+          "total_income": 950000,
+          "income_type": "Предпринимательская деятельность",
+          "income_sources": [
+            {
+              "source": "Продажа товаров",
+              "amount": 600000
+            },
+            {
+              "source": "Услуги",
+              "amount": 350000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 140000,
+          "paid_tax": 130000,
+          "outstanding_tax": 10000,
+          "tax_payments": [
+            {
+              "payment_date": "2021-04-15",
+              "amount": 65000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2021-06-15",
+              "amount": 65000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2021-08-15",
+              "amount": 10000,
+              "payment_status": "Не оплачено",
+              "outstanding_amount": 10000
+            }
+          ]
+        },
+        "tax_inquiries": [
+          {
+            "inquiry_date": "2021-01-10",
+            "inquiry_type": "Запрос на уточнение налоговой задолженности",
+            "status": "Завершено",
+            "result": "Долг уменьшен на 5000 рублей"
+          }
+        ]
+      },
+      {
+        "year": 2022,
+        "income_summary": {
+          "total_income": 1200000,
+          "income_type": "Предпринимательская деятельность",
+          "income_sources": [
+            {
+              "source": "Продажа товаров",
+              "amount": 700000
+            },
+            {
+              "source": "Услуги",
+              "amount": 500000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 180000,
+          "paid_tax": 170000,
+          "outstanding_tax": 10000,
+          "tax_payments": [
+            {
+              "payment_date": "2022-04-15",
+              "amount": 85000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2022-06-15",
+              "amount": 85000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2022-08-15",
+              "amount": 10000,
+              "payment_status": "Не оплачено",
+              "outstanding_amount": 10000
+            }
+          ]
+        },
+        "tax_inquiries": [
+          {
+            "inquiry_date": "2022-01-10",
+            "inquiry_type": "Запрос на уточнение налоговой задолженности",
+            "status": "Завершено",
+            "result": "Долг уменьшен на 5000 рублей"
+          }
+        ]
+      },
+      {
+        "year": 2023,
+        "income_summary": {
+          "total_income": 1300000,
+          "income_type": "Предпринимательская деятельность",
+          "income_sources": [
+            {
+              "source": "Продажа товаров",
+              "amount": 800000
+            },
+            {
+              "source": "Услуги",
+              "amount": 500000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 200000,
+          "paid_tax": 190000,
+          "outstanding_tax": 10000,
+          "tax_payments": [
+            {
+              "payment_date": "2023-04-15",
+              "amount": 100000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2023-06-15",
+              "amount": 90000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2023-08-15",
+              "amount": 10000,
+              "payment_status": "Не оплачено",
+              "outstanding_amount": 10000
+            }
+          ]
+        },
+        "tax_inquiries": [
+          {
+            "inquiry_date": "2023-01-10",
+            "inquiry_type": "Запрос на уточнение налоговой задолженности",
+            "status": "Завершено",
+            "result": "Долг уменьшен на 5000 рублей"
+          }
+        ]
+      },
+      {
+        "year": 2024,
+        "income_summary": {
+          "total_income": 1500000,
+          "income_type": "Предпринимательская деятельность",
+          "income_sources": [
+            {
+              "source": "Продажа товаров",
+              "amount": 900000
+            },
+            {
+              "source": "Услуги",
+              "amount": 600000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 250000,
+          "paid_tax": 240000,
+          "outstanding_tax": 10000,
+          "tax_payments": [
+            {
+              "payment_date": "2024-04-15",
+              "amount": 120000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2024-06-15",
+              "amount": 120000,
+              "payment_status": "Оплачено"
+            },
+            {
+              "payment_date": "2024-08-15",
+              "amount": 10000,
+              "payment_status": "Не оплачено",
+              "outstanding_amount": 10000
+            }
+          ]
+        },
+        "tax_inquiries": [
+          {
+            "inquiry_date": "2024-01-10",
+            "inquiry_type": "Запрос на уточнение налоговой задолженности",
+            "status": "Завершено",
+            "result": "Долг уменьшен на 5000 рублей"
+          }
+        ]
+      }
+    ]
+  }
+}

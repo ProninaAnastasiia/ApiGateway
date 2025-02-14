@@ -1,7 +1,13 @@
+using ApiGateway.FakeResponses;
+using Microsoft.AspNetCore.Mvc;
+
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddHttpClient(); // Для отправки HTTP запросов
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+builder.Services.AddScoped<MakeResponseUtility>();
+builder.Services.AddSingleton<IWebHostEnvironment>(builder.Environment);
 
 var app = builder.Build();
 
@@ -50,6 +56,27 @@ app.MapPost("/api/validate/application", (Application application) =>
 
     // Возвращаем успешный ответ
     return Results.Ok("Application validate processed successfully.");
+});
+
+// Метод для сбора данных 1
+app.MapPost("/api/find/endpoint1", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+{
+    Console.WriteLine("Сбор данных 1 завершен.");
+    return await responseUtility.MakeResponse("nbki", application); // Вызываем метод через экземпляр класса
+});
+
+// Метод для сбора данных 2
+app.MapPost("/api/find/endpoint2", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+{
+    Console.WriteLine("Сбор данных 2 завершен.");
+    return await responseUtility.MakeResponse("fns1", application); // Вызываем метод через экземпляр класса
+});
+
+// Метод для сбора данных 3
+app.MapPost("/api/find/endpoint3", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+{
+    Console.WriteLine("Сбор данных 3 завершен.");
+    return await responseUtility.MakeResponse("fssp", application); // Вызываем метод через экземпляр класса
 });
 
 app.Run();

@@ -1,0 +1,137 @@
+{
+  "taxpayer_status": "Работник организации",
+  "history": {
+    "tax_reports": [
+      {
+        "year": 2020,
+        "income_summary": {
+          "total_income": 600000,
+          "income_type": "Заработная плата",
+          "income_sources": [
+            {
+              "source": "Заработная плата",
+              "amount": 600000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 90000,
+          "paid_tax": 90000,
+          "outstanding_tax": 0,
+          "tax_payments": [
+            {
+              "payment_date": "2020-04-15",
+              "amount": 90000,
+              "payment_status": "Оплачено"
+            }
+          ]
+        },
+        "tax_inquiries": []
+      },
+      {
+        "year": 2021,
+        "income_summary": {
+          "total_income": 650000,
+          "income_type": "Заработная плата",
+          "income_sources": [
+            {
+              "source": "Заработная плата",
+              "amount": 650000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 97500,
+          "paid_tax": 97500,
+          "outstanding_tax": 0,
+          "tax_payments": [
+            {
+              "payment_date": "2021-04-15",
+              "amount": 97500,
+              "payment_status": "Оплачено"
+            }
+          ]
+        },
+        "tax_inquiries": []
+      },
+      {
+        "year": 2022,
+        "income_summary": {
+          "total_income": 700000,
+          "income_type": "Заработная плата",
+          "income_sources": [
+            {
+              "source": "Заработная плата",
+              "amount": 700000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 105000,
+          "paid_tax": 105000,
+          "outstanding_tax": 0,
+          "tax_payments": [
+            {
+              "payment_date": "2022-04-15",
+              "amount": 105000,
+              "payment_status": "Оплачено"
+            }
+          ]
+        },
+        "tax_inquiries": []
+      },
+      {
+        "year": 2023,
+        "income_summary": {
+          "total_income": 750000,
+          "income_type": "Заработная плата",
+          "income_sources": [
+            {
+              "source": "Заработная плата",
+              "amount": 750000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 112500,
+          "paid_tax": 112500,
+          "outstanding_tax": 0,
+          "tax_payments": [
+            {
+              "payment_date": "2023-04-15",
+              "amount": 112500,
+              "payment_status": "Оплачено"
+            }
+          ]
+        },
+        "tax_inquiries": []
+      },
+      {
+        "year": 2024,
+        "income_summary": {
+          "total_income": 800000,
+          "income_type": "Заработная плата",
+          "income_sources": [
+            {
+              "source": "Заработная плата",
+              "amount": 800000
+            }
+          ]
+        },
+        "tax_obligations": {
+          "total_tax_due": 120000,
+          "paid_tax": 120000,
+          "outstanding_tax": 0,
+          "tax_payments": [
+            {
+              "payment_date": "2024-04-15",
+              "amount": 120000,
+              "payment_status": "Оплачено"
+            }
+          ]
+        },
+        "tax_inquiries": []
+      }
+    ]
+  }
+}

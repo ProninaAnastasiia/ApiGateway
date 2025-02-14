@@ -1,0 +1,293 @@
+{
+  "history": {
+    "loans": [
+      {
+        "loan_id": "L123456789",
+        "loan_type": "Потребительский кредит",
+        "amount": 50000,
+        "currency": "RUB",
+        "status": "Закрыт",
+        "issue_date": "2020-05-15",
+        "repayment_schedule": "Ежемесячно",
+        "paid_amount": 50000,
+        "last_payment_date": "2022-05-15",
+        "payment_history": [
+          {
+            "payment_date": "2020-06-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2020-07-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2020-08-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2020-09-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2020-10-15",
+            "amount": 5000,
+            "status": "Просрочено",
+            "days_late": 5
+          },
+          {
+            "payment_date": "2020-11-15",
+            "amount": 5000,
+            "status": "Просрочено",
+            "days_late": 10
+          },
+          {
+            "payment_date": "2020-12-15",
+            "amount": 5000,
+            "status": "Просрочено",
+            "days_late": 20
+          },
+          {
+            "payment_date": "2021-01-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-02-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-03-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-04-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-05-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-06-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-07-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-08-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-09-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-10-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-11-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-12-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-01-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-02-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-03-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-04-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-05-15",
+            "amount": 5000,
+            "status": "Оплачено"
+          }
+        ]
+      },
+      {
+        "loan_id": "L987654321",
+        "loan_type": "Ипотека",
+        "amount": 2000000,
+        "currency": "RUB",
+        "status": "Активен",
+        "issue_date": "2015-08-01",
+        "repayment_schedule": "Ежемесячно",
+        "paid_amount": 1200000,
+        "last_payment_date": "2025-02-01",
+        "payment_history": [
+          {
+            "payment_date": "2021-01-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-02-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-03-01",
+            "amount": 20000,
+            "status": "Просрочено",
+            "days_late": 7
+          },
+          {
+            "payment_date": "2021-04-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-05-01",
+            "amount": 20000,
+            "status": "Просрочено",
+            "days_late": 10
+          },
+          {
+            "payment_date": "2021-06-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-07-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-08-01",
+            "amount": 20000,
+            "status": "Просрочено",
+            "days_late": 15
+          },
+          {
+            "payment_date": "2021-09-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-10-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2021-11-01",
+            "amount": 20000,
+            "status": "Просрочено",
+            "days_late": 5
+          },
+          {
+            "payment_date": "2021-12-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-01-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-02-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-03-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-04-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-05-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-06-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-07-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-08-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-09-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          },
+          {
+            "payment_date": "2022-10-01",
+            "amount": 20000,
+            "status": "Оплачено"
+          }
+        ]
+      }
+    ],
+    "credit_score": {
+      "score": 750,
+      "score_date": "2025-02-01",
+      "score_range": "700-850",
+      "score_description": "Хороший"
+    },
+    "bankruptcies": [
+      {
+        "bankruptcy_id": "B123456789",
+        "type": "Личное банкротство",
+        "filing_date": "2019-02-20",
+        "discharge_date": "2020-02-20",
+        "status": "Завершено"
+      }
+    ],
+    "inquiries": [
+      {
+        "inquiry_id": "I123456789",
+        "date": "2025-01-20",
+        "type": "Запрос на кредит",
+        "inquired_by": "Банк А",
+        "result": "Одобрено"
+      }
+    ]
+  }
+}
