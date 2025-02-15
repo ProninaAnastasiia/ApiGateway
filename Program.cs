@@ -22,15 +22,7 @@ app.UseHttpsRedirection();
 // Настроим маршрут для приема заявок от клиента
 app.MapPost("/submit-application", async (Application application, IHttpClientFactory clientFactory) =>
 {
-    // Создаем HttpClient с настройками для игнорирования ошибок сертификатов
-    var handler = new HttpClientHandler
-    {
-        // Отключаем проверку сертификатов только для разработки
-        ServerCertificateCustomValidationCallback = HttpClientHandler.DangerousAcceptAnyServerCertificateValidator
-    };
-    
-    var client = new HttpClient(handler);
-    
+    var client = clientFactory.CreateClient();
     // Логируем полученные данные в консоль
     Console.WriteLine($"Received application: {application.LoanPurpose}, {application.LoanAmount}, {application.LoanTermMonths}");
     Console.WriteLine($"User: {application.User.FirstName}, {application.User.LastName}, {application.User.Email}");
@@ -59,21 +51,21 @@ app.MapPost("/api/validate/application", (Application application) =>
 });
 
 // Метод для сбора данных 1
-app.MapPost("/api/find/endpoint1", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+app.MapPost("/api/find/endpoint1", async ([FromBody] ApplicationSubmittedMessage application, [FromServices] MakeResponseUtility responseUtility) =>
 {
     Console.WriteLine("Сбор данных 1 завершен.");
     return await responseUtility.MakeResponse("nbki", application); // Вызываем метод через экземпляр класса
 });
 
 // Метод для сбора данных 2
-app.MapPost("/api/find/endpoint2", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+app.MapPost("/api/find/endpoint2", async ([FromBody] ApplicationSubmittedMessage application, [FromServices] MakeResponseUtility responseUtility) =>
 {
     Console.WriteLine("Сбор данных 2 завершен.");
     return await responseUtility.MakeResponse("fns1", application); // Вызываем метод через экземпляр класса
 });
 
 // Метод для сбора данных 3
-app.MapPost("/api/find/endpoint3", async ([FromBody] Application application, [FromServices] MakeResponseUtility responseUtility) =>
+app.MapPost("/api/find/endpoint3", async ([FromBody] ApplicationSubmittedMessage application, [FromServices] MakeResponseUtility responseUtility) =>
 {
     Console.WriteLine("Сбор данных 3 завершен.");
     return await responseUtility.MakeResponse("fssp", application); // Вызываем метод через экземпляр класса
@@ -106,3 +98,9 @@ public class Application
     public string PaymentType { get; set; } // Тип платежей (аннуитетные, дифференцированные)
     public User User { get; set; }
 }
+
+public record ApplicationSubmittedMessage(
+    string FirstName, string LastName, int Age, string Passport, string INN, 
+    string Gender, string MaritalStatus, string Education, string EmploymentType, 
+    string LoanPurpose, double LoanAmount, int LoanTermMonths, string LoanType,
+    double InterestRate, string PaymentType, string timestamp);

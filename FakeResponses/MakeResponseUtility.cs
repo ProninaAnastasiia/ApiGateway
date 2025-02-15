@@ -10,7 +10,7 @@ public class MakeResponseUtility
     {
         _env = env;
     }
-    public async Task<IResult> MakeResponse(string jsonName, Application application)
+    public async Task<IResult> MakeResponse(string jsonName, ApplicationSubmittedMessage application)
     {
         string jsonPath = Path.Combine(_env.ContentRootPath, "FakeResponses", $"{jsonName}.json");
         // 1. Прочитать содержимое nbki.json
@@ -44,11 +44,11 @@ public class MakeResponseUtility
 
         // 4. Добавить дополнительные поля
         response.Add("request_date", DateTimeOffset.UtcNow);
-        response.Add("passport", application.User.Passport); 
-        response.Add("first_name", application.User.FirstName);
-        response.Add("last_name", application.User.LastName);
-        response.Add("age", application.User.Age);
-        response.Add("inn", application.User.INN);
+        response.Add("passport", application.Passport); 
+        response.Add("first_name", application.FirstName);
+        response.Add("last_name", application.LastName);
+        response.Add("age", application.Age);
+        response.Add("inn", application.INN);
         
         // 5. Добавить содержимое nbki.json
         response.Add("history", data.RootElement.GetProperty("history"));
